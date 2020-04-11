@@ -2,7 +2,28 @@ import 'package:flutter/material.dart';
 
 import '../constants/constants.dart';
 
-Widget customAppBar(BuildContext context, {String title}) {
+// APPBAR WHEN LOGGED IN
+Widget customAppBar({String title}) {
+  return AppBar(
+    backgroundColor: AppConstants.backgroundColor1,
+    title: Text(title),
+    actions: <Widget>[
+      IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.settings,
+          color: Colors.white,
+        ),
+      )
+    ],
+  );
+}
+
+// APPBAR WHEN NOT LOGGED IN
+Widget customAuthAppBar(
+  BuildContext context, {
+  String title,
+}) {
   return AppBar(
     actions: <Widget>[
       IconButton(

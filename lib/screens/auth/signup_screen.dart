@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:form_field_validator/form_field_validator.dart';
-import 'package:whoknowsapp/constants/constants.dart';
 
-import '../widgets/formular_widgets.dart';
-import '../widgets/graphical_widgets.dart';
+import '../../constants/constants.dart';
+import '../../widgets/formular_widgets.dart';
+import '../../widgets/graphical_widgets.dart';
 
 class SignupScreen extends StatefulWidget {
   static final routeName = '/signup_screen';
@@ -28,7 +28,7 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-      appBar: customAppBar(context, title: 'Signup'),
+      appBar: customAuthAppBar(context, title: 'Signup'),
       body: backgroundContainer(
         child: Form(
           key: _formKey,

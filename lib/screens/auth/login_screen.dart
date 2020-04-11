@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:whoknowsapp/screens/dashboard_screen.dart';
+import 'file:///C:/Users/marcu/Desktop/Projekte/flutter/whoknows/whoknows_app/lib/screens/dashboard/dashboard_screen.dart';
 
-import '../widgets/formular_widgets.dart';
-import '../widgets/graphical_widgets.dart';
+import '../../widgets/formular_widgets.dart';
+import '../../widgets/graphical_widgets.dart';
 
 class LoginScreen extends StatefulWidget {
   static final routeName = '/login_screen';
@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-      appBar: customAppBar(context, title: 'Login'),
+      appBar: customAuthAppBar(context, title: 'Login'),
       body: backgroundContainer(
         child: Form(
           key: _formKey,

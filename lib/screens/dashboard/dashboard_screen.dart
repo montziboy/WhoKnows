@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../widgets/graphical_widgets.dart';
+import '../../widgets/navigation_widgets.dart';
+
 class DashboardScreen extends StatefulWidget {
   static final routeName = '/dashboard_screen';
   @override
@@ -10,7 +13,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: null,
+      appBar: customAppBar(title: 'Dashboard'),
+      drawer: CustomDrawer(),
+      body: backgroundContainer(),
     );
   }
 }

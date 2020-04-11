@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:whoknowsapp/widgets/graphical_widgets.dart';
 
-import '../widgets/graphical_widgets.dart';
-import '../screens/login_screen.dart';
+import '../../widgets/graphical_widgets.dart';
+import 'login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
