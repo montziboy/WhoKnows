@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'file:///C:/Users/marcu/Desktop/Projekte/flutter/whoknows/whoknows_app/lib/screens/dashboard/dashboard_screen.dart';
 
+import '../dashboard/dashboard_screen.dart';
 import '../../widgets/formular_widgets.dart';
 import '../../widgets/graphical_widgets.dart';
 
@@ -76,6 +76,11 @@ class _LoginScreenState extends State<LoginScreen> {
               customDivider(),
               // NO ACCOUNT YET? REGISTER!
               registerLabel(context),
+              // VERSION
+              Padding(
+                padding: const EdgeInsets.only(top: 60.0),
+                child: Text('0.0.1-1 Alpha'),
+              ),
             ],
           ),
         ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart';
+import 'package:whoknowsapp/constants/constants.dart';
 
 // APPBAR WHEN LOGGED IN
 Widget customAppBar({String title}) {

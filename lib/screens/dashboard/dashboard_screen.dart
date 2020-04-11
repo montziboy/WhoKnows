@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/graphical_widgets.dart';
-import '../../widgets/navigation_widgets.dart';
+import 'package:whoknowsapp/widgets/graphical_widgets.dart';
+import 'package:whoknowsapp/widgets/navigation_widgets.dart';
 
 class DashboardScreen extends StatefulWidget {
   static final routeName = '/dashboard_screen';

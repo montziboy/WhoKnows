@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../screens/auth/signup_screen.dart';
-import '../constants/constants.dart';
+import 'package:whoknowsapp/screens/auth/signup_screen.dart';
+import 'package:whoknowsapp/constants/constants.dart';
 
 Widget customAuthButton({
   String title,

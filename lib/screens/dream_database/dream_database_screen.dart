@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:whoknowsapp/widgets/graphical_widgets.dart';
 import 'package:whoknowsapp/widgets/navigation_widgets.dart';
 
-class CommunityScreen extends StatefulWidget {
-  static final routeName = '/community_screen';
+class DreamDatabaseScreen extends StatefulWidget {
+  static final routeName = '/dream_database_screen';
 
   @override
-  _CommunityScreenState createState() => _CommunityScreenState();
+  _DreamDatabaseScreenState createState() => _DreamDatabaseScreenState();
 }
 
-class _CommunityScreenState extends State<CommunityScreen> {
+class _DreamDatabaseScreenState extends State<DreamDatabaseScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(title: 'Community'),
+      appBar: customAppBar(title: 'Dream Database'),
       drawer: CustomDrawer(),
       body: backgroundContainer(),
     );

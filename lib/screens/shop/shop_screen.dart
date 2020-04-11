@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:whoknowsapp/widgets/graphical_widgets.dart';
 import 'package:whoknowsapp/widgets/navigation_widgets.dart';
 
-class CommunityScreen extends StatefulWidget {
-  static final routeName = '/community_screen';
+class ShopScreen extends StatefulWidget {
+  static final routeName = '/shop_screen';
 
   @override
-  _CommunityScreenState createState() => _CommunityScreenState();
+  _ShopScreenState createState() => _ShopScreenState();
 }
 
-class _CommunityScreenState extends State<CommunityScreen> {
+class _ShopScreenState extends State<ShopScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(title: 'Community'),
+      appBar: customAppBar(title: 'Shop'),
       drawer: CustomDrawer(),
       body: backgroundContainer(),
     );

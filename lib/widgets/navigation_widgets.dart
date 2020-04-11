@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/marcu/Desktop/Projekte/flutter/whoknows/whoknows_app/lib/screens/community/community_screen.dart';
-import 'file:///C:/Users/marcu/Desktop/Projekte/flutter/whoknows/whoknows_app/lib/screens/dashboard/dashboard_screen.dart';
-import 'file:///C:/Users/marcu/Desktop/Projekte/flutter/whoknows/whoknows_app/lib/screens/news/news_screen.dart';
+
+import 'package:whoknowsapp/screens/dream_database/dream_database_screen.dart';
+import 'package:whoknowsapp/screens/community/community_screen.dart';
+import 'package:whoknowsapp/screens/dashboard/dashboard_screen.dart';
+import 'package:whoknowsapp/screens/news/news_screen.dart';
+import 'package:whoknowsapp/screens/shop/shop_screen.dart';
 
 class CustomDrawer extends StatefulWidget {
   @override
@@ -32,7 +35,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Text(
                 '- Navigation -'.toUpperCase(),
-                style: TextStyle(color: Colors.white, fontSize: 20.0),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             Expanded(
@@ -58,9 +64,15 @@ class _CustomDrawerState extends State<CustomDrawer> {
                               Navigator.pushNamed(
                                   context, CommunityScreen.routeName);
                               break;
+                            case 3:
+                              Navigator.pushNamed(
+                                  context, DreamDatabaseScreen.routeName);
+                              break;
+                            case 4:
+                              Navigator.pushNamed(
+                                  context, ShopScreen.routeName);
+                              break;
                           }
-                          print(
-                              '${drawerPageNavigation[navigationIndex]} clicked!');
                         },
                       );
                     },

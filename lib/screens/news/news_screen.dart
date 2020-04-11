@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/graphical_widgets.dart';
-import '../../widgets/navigation_widgets.dart';
+import 'package:whoknowsapp/widgets/graphical_widgets.dart';
+import 'package:whoknowsapp/widgets/navigation_widgets.dart';
 
 class NewsScreen extends StatefulWidget {
   static final routeName = '/news_screen';
